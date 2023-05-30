@@ -37,8 +37,8 @@ print('#'*10)
 root_path = os.path.join(os.environ['WORKDIR'], 'suyee')
 # ----------------------------- Training -------------------------
 
-cmd = "python train.py --outdir={}/training-runs/recolor_symbolic/ \
-     --data={}/datasets/symbolic_recolored.zip \
+cmd = "python train.py --outdir={}/training-runs/tiny-imagenet/ \
+     --data={}/datasets/tiny-imagenet.zip \
      --gpus=8 \
      --cfg=auto ".format(root_path, root_path)
 
